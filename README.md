@@ -15,7 +15,7 @@ After this you will see a prompt that looks like this
 ```
 Username: 
 ```
-The default user name is 'root', if this doesn't work check what global username is equal to
+The default user name is 'root', if this doesn't work check what global username is equal to in the config file
 
 Then after that you will see
 
@@ -28,4 +28,16 @@ You will see this prompt after logging in
 ```
 $ 
 ```
-Type ls, help, about, or any other command! We hope you enjoy UCOS!
+Type ls, help, about, or any other command!
+# Config File
+The config file is very useful in UCOS if you want to change usernames, passwords, and a few other things
+The unedited version of the file looks like this
+```python
+#config.py
+global user_prompt
+user_prompt = "$ "
+global username
+username = "root"
+global password
+password = "root"
+```
