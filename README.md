@@ -1,4 +1,7 @@
 # UnicomOS
+UnicomOS or UCOS is an open source bash like shell written in python by Geremachek2
+
+# Before You Start...
 Please install python on your computer fist before runing! Be sure it can be launched in the terminal!
 Put all of these system files in its own folder, called USYS or just UCOS
 
@@ -25,4 +28,4 @@ You will see this prompt after logging in
 ```
 $ 
 ```
-Type ls, help, about, or any other command! We hope u enjoy ucos!
+Type ls, help, about, or any other command! We hope you enjoy ucos!
