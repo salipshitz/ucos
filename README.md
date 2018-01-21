@@ -9,7 +9,7 @@ Put all of these system files in its own folder, called USYS or just UCOS
 ```
 Booting Into UnicomOS 12.0...
 ```
-You can execute dev commands on this screen, check the /ucos.py source code to find out what you can do!
+You can execute dev commands on this screen, check the /ucos.py source code or BOOTCMD.md to find out what you can do!
 
 After this you will see a prompt that looks like this
 ```
@@ -28,4 +28,4 @@ You will see this prompt after logging in
 ```
 $ 
 ```
-Type ls, help, about, or any other command! We hope you enjoy ucos!
+Type ls, help, about, or any other command! We hope you enjoy UCOS!
