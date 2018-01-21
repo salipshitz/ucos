@@ -30,7 +30,7 @@ $
 ```
 Type ls, help, about, or any other command!
 # Config File
-The config file is very useful in UCOS if you want to change usernames, passwords, and a few other things
+The config file (ucos_config.py) is very useful in UCOS if you want to change usernames, passwords, and a few other things
 The unedited version of the file looks like this
 ```python
 #config.py
@@ -41,3 +41,4 @@ username = "root"
 global password
 password = "root"
 ```
+You can change the password, username, and prompt character by changing what their equal to
