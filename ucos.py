@@ -246,7 +246,7 @@ python
         print("This Program Is In Very Early Development, Please Do Not Be To Harsh When You Incounter An Error")
         input("Press Enter To Continue... ")
         os.system("cls")
-        os.system('python goblin.py')
+        os.system('python game.py')
         os.system('title UnicomOS')
       #trace command
       elif ui == "trace":
