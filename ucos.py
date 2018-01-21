@@ -89,8 +89,8 @@ os.system('cls')
 dev_input = input("Booting Into UnicomOS v12.0... ")
 prompt = ucos_config.user_prompt
 if dev_input == "sharktank":
-  print("User: root")
-  print("Password: root")
+  print("Username: " + str(ucos_config.username))
+  print("Password: " + str(ucos_config.password))
   input("")
 elif dev_input == "hex":
   os.system('color 1f')
