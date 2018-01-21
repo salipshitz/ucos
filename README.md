@@ -29,6 +29,3 @@ You will see this prompt after logging in
 $ 
 ```
 Type ls, help, about, or any other command! We hope you enjoy UCOS!
-```javascript
-alert('lol')
-```
