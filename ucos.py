@@ -119,8 +119,6 @@ else:
         print("""
 date
 time
-percent0
-grade0
 edit
 calc
 echo[v]
