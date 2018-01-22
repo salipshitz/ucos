@@ -42,3 +42,9 @@ global password
 password = "root"
 ```
 You can change the password, username, and prompt character by changing what their equal to
+# Tricks and easter eggs
+if you use the print command like so
+```
+$ print ucos.py
+```
+you should get the entire UCOS source code printed in the terminal, pretty huh?
