@@ -275,7 +275,7 @@ UnicomOS or UCOS is an open source, easaly hackable OS, written in python. Feel 
       #echo fixes
       elif int(len(ui)) < 5:
         print("Syntax Error, '" + str(ui) + "' is not valid")
-      elif int(len(ui)) < 6:
+      elif int(len(ui)) < 7:
         print("Syntax Error, '" + str(ui) + "' is not valid")
       #print command
       elif str(ui[0] + ui[1] + ui[2] + ui[3] + ui[4] + ui[5]) == "print ":
