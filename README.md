@@ -47,7 +47,7 @@ if you use the print command like so
 ```
 $ print ucos.py
 ```
-you should get the entire UCOS source code printed in the terminal, pretty huh?
+you should get the entire UCOS source code printed in the terminal, pretty cool huh?
 
 The 'python' application may just seem like a way to execute python code in UCOS, but you can also meddle with the source code it self!
 try this commmand
