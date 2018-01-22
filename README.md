@@ -57,3 +57,10 @@ $ python
 >>> exit
 The new Prompt!$ 
 ```
+If you want to do a quick calculation that doesn't require any scientific functions and you don't wan't to use the calculator program
+use this command!
+```
+$ echov 9*54
+486
+$ 
+```
