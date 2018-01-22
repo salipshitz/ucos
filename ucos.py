@@ -141,33 +141,6 @@ python
       #time command
       elif ui == "time":
         print(str(datetime.now().hour) + ":" + str(datetime.now().minute) + ":" + str(datetime.now().second))
-      #percent0 program
-      elif ui == "percent0":
-        p = 100
-        print("*********************************************************")
-        print ("Welcome To Percent0 v1")
-        print("Convert Percent To Decimal")
-        ans1 = input(">")
-        print(int(ans1) / int(p))
-        print("*********************************************************")
-      #grade0 program
-      elif ui == "grade0":
-        print("***********************************")
-        print("Welcome To Grade0 v1.0")
-        print("Total Points For Asingment")
-        tp = input(">")
-        print("How Many Points Student Got")
-        sp = input(">")
-        input("Total Grade As A Percentage Is...")
-        input(int(sp) / int(tp) * 100)
-        print("--Grade Table--")
-        print("93%-100%; A")
-        print("90%-92%; A-")
-        print("87%-89; B+")
-        print("83%-86%; B")
-        print("80%-82%; B-")
-        print("77%-81%; C+")
-        print("***********************************")
       #edit program
       elif ui == "edit":
           os.system('cls')
