@@ -126,7 +126,7 @@ rand[ui]
 win
 cmd
 run[py,vbs]
-*print
+print
 ping
 trace
 goblin
