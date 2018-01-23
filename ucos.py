@@ -267,7 +267,6 @@ python
         print("""
 Type 'ls' to list commands and file names
 type cls or clear to clear screen
-if a command name has an '*' before it, you need to have used the 'edit' program first before using said command
           """)
       elif ui == "about":
         print('''
