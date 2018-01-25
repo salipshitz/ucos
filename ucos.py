@@ -297,7 +297,7 @@ UnicomOS or UCOS is an open source, easaly hackable OS, written in python. Feel 
       #print command
       elif str(ui[0] + ui[1] + ui[2] + ui[3] + ui[4] + ui[5]) == "print ":
         prntlen = len(ui)
-        os.system('type ' + ui[6:int(prntlen)])
+        f.read(ui[6:int(prntlen)])
       #runvbs command
       elif str(ui[0] + ui[1] + ui[2] + ui[3] + ui[4] + ui[5] + ui[6]) == "runvbs ":
         vbslen = len(ui)
