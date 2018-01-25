@@ -114,7 +114,7 @@ else:
       if ui == "ls":
         path = os.getcwd()
         files = os.listdir(path)
-        list_files = ' '.join(files)
+        list_files = '  '.join(files)
         print(list_files)
         print("""
 date
