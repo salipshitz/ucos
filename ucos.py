@@ -156,7 +156,7 @@ python
           sv = input("Would You Like To Save This Document? (Y/N)")
           if sv == "y":
             fileName = input("Enter A File Name... ")
-            f = open(str(fileName),'w')
+            f = open(str(fileName),'w','r')
             f.write(str(edit_ui))
             f.write(str(edit_ui1))
             f.write(str(edit_ui2))
