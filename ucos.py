@@ -16,12 +16,12 @@ def man(name):
     print("A simple percent converter")
   elif name == "grade0":
     print("Score calculator")
-  elif name == "edit":
+  elif name == "micro":
     print("A text simple text editor that can work with the commands print, run, runvbs, and runpy")
   elif name == "calc":
     print("A Simple calculator with some scientific functions")
   elif name == "print":
-    print("Prints the contence of edit")
+    print("Prints the contence of micro")
   elif name == "rand":
     print("A random number between 1 and 100")
   elif name == "randui":
@@ -43,7 +43,7 @@ def man(name):
   elif name == "echov":
     print("Evaluates the exspression following echov")
   elif name == "print":
-    print("Prints the contents of edit")
+    print("Prints the contents of micro")
 #Calculator app function 
 def root(number6):
   print(math.sqrt(number6))
@@ -119,7 +119,7 @@ else:
         print("""
 date
 time
-edit
+micro
 calc
 echo[v]
 rand[ui]
@@ -140,18 +140,18 @@ python
       elif ui == "time":
         print(str(datetime.now().hour) + ":" + str(datetime.now().minute) + ":" + str(datetime.now().second))
       #edit program
-      elif ui == "edit":
+      elif ui == "micro":
           os.system('cls')
           fileName = input("File Name... ")
           os.system('cls')
-          print("----------EDIT----------")
+          print("----------MICRO----------")
           f = open(fileName, 'w')
           while True:
             edit_ui = input("")
             f.write("""
 """)
             f.write(edit_ui)
-            if edit_ui == '#q#' or '//q':
+            if edit_ui == '#q' or '//q' or ':q':
               f.close()
               break
       #clear command_1
