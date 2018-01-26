@@ -151,7 +151,7 @@ python
             f.write("""
 """)
             f.write(edit_ui)
-            if edit_ui == ':q:':
+            if edit_ui == '#q#' or '//q':
               f.close()
               break
       #clear command_1
