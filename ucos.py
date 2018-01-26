@@ -142,34 +142,20 @@ python
       #edit program
       elif ui == "edit":
           os.system('cls')
+          fileName = input("File Name... ")
+          os.system('cls')
           print("----------EDIT----------")
-          edit_ui = input('')
-          edit_ui1 = input('')
-          edit_ui2 = input('')
-          edit_ui3 = input('')
-          edit_ui4 = input('')
-          edit_ui5 = input('')
-          edit_ui6 = input('')
-          edit_ui7 = input('')
-          edit_ui8 = input('')
-          edit_ui9 = input('')
-          sv = input("Would You Like To Save This Document? (Y/N)")
-          if sv == "y":
-            fileName = input("Enter A File Name... ")
-            f = open(str(fileName),'w','r')
-            f.write(str(edit_ui))
-            f.write(str(edit_ui1))
-            f.write(str(edit_ui2))
-            f.write(str(edit_ui3))
-            f.write(str(edit_ui4))
-            f.write(str(edit_ui5))
-            f.write(str(edit_ui6))
-            f.write(str(edit_ui7))
-            f.write(str(edit_ui8))
-            f.write(str(edit_ui9))
-            f.close()
-          elif sv == "n":
-            continue
+          f = open(fileName, 'w')
+          while True:
+            edit_ui = input("")
+            f.write("""
+""")
+            f.write(edit_ui)
+            f.write("""
+""")
+            if edit_ui == ':q:':
+              f.close()
+              break
       #clear command_1
       elif ui == "cls":
         os.system('cls')
@@ -297,7 +283,9 @@ UnicomOS or UCOS is an open source, easaly hackable OS, written in python. Feel 
       #print command
       elif str(ui[0] + ui[1] + ui[2] + ui[3] + ui[4] + ui[5]) == "print ":
         prntlen = len(ui)
-        print(f.read(ui[6:int(prntlen)]))
+        pf = open(ui[6:int(prntlen)], 'r')
+        print(pf.read())
+        pf.close()
       #runvbs command
       elif str(ui[0] + ui[1] + ui[2] + ui[3] + ui[4] + ui[5] + ui[6]) == "runvbs ":
         vbslen = len(ui)
@@ -305,7 +293,9 @@ UnicomOS or UCOS is an open source, easaly hackable OS, written in python. Feel 
       #runpy command
       elif str(ui[0] + ui[1] + ui[2] + ui[3] + ui[4] + ui[5]) == "runpy ":
         pylen = len(ui)
-        os.system('python ' + ui[6:int(pylen)])
+        pyf = open(ui[6:int(pylen)], 'r')
+        exec(pyf.read())
+        pyf.close()
       #echo command
       elif str(ui[0] + ui[1] + ui[2] + ui[3] + ui[4]) == "echo ":
         wlen = len(ui)
