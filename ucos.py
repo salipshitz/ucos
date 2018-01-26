@@ -12,16 +12,12 @@ def man(name):
     print("Displays Date")
   elif name == "time":
     print("Displays Time")
-  elif name == "percent0":
-    print("A simple percent converter")
-  elif name == "grade0":
-    print("Score calculator")
   elif name == "micro":
     print("A text simple text editor that can work with the commands print, run, runvbs, and runpy")
   elif name == "calc":
     print("A Simple calculator with some scientific functions")
   elif name == "print":
-    print("Prints the contence of micro")
+    print("Prints the contence of text files")
   elif name == "rand":
     print("A random number between 1 and 100")
   elif name == "randui":
@@ -234,7 +230,7 @@ python
         man("percent0")
       elif ui == "man grade0":
         man("grade0")
-      elif ui == "man edit":
+      elif ui == "man micro":
         man("edit")
       elif ui == "man calc":
         man("calc")
