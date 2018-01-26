@@ -151,8 +151,6 @@ python
             f.write("""
 """)
             f.write(edit_ui)
-            f.write("""
-""")
             if edit_ui == ':q:':
               f.close()
               break
