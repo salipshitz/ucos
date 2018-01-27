@@ -143,11 +143,11 @@ python
           print("----------MICRO----------")
           f = open(fileName, 'w')
           while True:
-            edit_ui = input("")
             f.write("""
 """)
+            edit_ui = input("")
             f.write(edit_ui)
-            if edit_ui == '#q' or '//q' or ':q':
+            if edit_ui == '#q':
               f.close()
               break
       #clear command_1
