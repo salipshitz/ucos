@@ -39,7 +39,9 @@ def man(name):
   elif name == "echov":
     print("Evaluates the exspression following echov")
   elif name == "print":
-    print("Prints the contents of micro")
+    print("Prints text files")
+  elif name == "rmv":
+    print("Deletes Filles")
 #Calculator app function 
 def root(number6):
   print(math.sqrt(number6))
@@ -226,10 +228,6 @@ python
         man("date")
       elif ui == "man time":
         man("time")
-      elif ui == "man percent0":
-        man("percent0")
-      elif ui == "man grade0":
-        man("grade0")
       elif ui == "man micro":
         man("edit")
       elif ui == "man calc":
@@ -260,6 +258,8 @@ python
         man("echov")
       elif ui == "man print":
         man("print")
+      elif ui == "man rmv":
+        man("rmv")
       #Help listing
       elif ui == "help":
         print("""
@@ -270,10 +270,14 @@ type cls or clear to clear screen
         print('''
 UnicomOS or UCOS is an open source, easaly hackable OS, written in python. Feel free to modify the source code via the python app included in UCOS or by directly modifing the source code. You can add your own program written in python, java C++ or anything else! Have Fun!''')
       #echo fixes
-      elif int(len(ui)) < 5:
+      elif int(len(ui)) < 3:
         print("Syntax Error, '" + str(ui) + "' is not valid")
       elif int(len(ui)) < 7:
         print("Syntax Error, '" + str(ui) + "' is not valid")
+      #rmv command
+      elif ui[0] + ui[1] + ui[2] + ui[3] == 'rmv ':
+        rmvlen = len(ui)
+        os.system('del ' + str(ui[4:int(rmvlen)]))
       #print command
       elif str(ui[0] + ui[1] + ui[2] + ui[3] + ui[4] + ui[5]) == "print ":
         prntlen = len(ui)
