@@ -5,7 +5,7 @@ from datetime import datetime
 import random
 import ucos_config
 #Title of Terminal Window
-os.system("title UnicomOS")
+os.system("title UCOS")
 #Manual Logs
 def man(name):
   if name == "date":
@@ -84,7 +84,7 @@ def calc():
     root(int(rootui))
 #OS Start
 os.system('cls')
-dev_input = input("Booting Into UnicomOS v12.0... ")
+dev_input = input("Booting Into UCOS v12.0... ")
 prompt = ucos_config.user_prompt
 if dev_input == "sharktank":
   print("Username: " + str(ucos_config.username))
@@ -117,7 +117,7 @@ else:
         print("""
 date
 time
-micro
+micro (editor)
 calc
 echo[v]
 rand[ui]
@@ -137,7 +137,7 @@ python
       #time command
       elif ui == "time":
         print(str(datetime.now().hour) + ":" + str(datetime.now().minute) + ":" + str(datetime.now().second))
-      #edit program
+      #micro program
       elif ui == "micro":
           os.system('cls')
           fileName = input("File Name... ")
@@ -148,10 +148,10 @@ python
             f.write("""
 """)
             edit_ui = input("")
-            f.write(edit_ui)
-            if edit_ui == '#q':
+            if edit_ui == ":q":
               f.close()
               break
+            f.write(edit_ui)
       #clear command_1
       elif ui == "cls":
         os.system('cls')
@@ -161,6 +161,7 @@ python
       #dev command
       elif ui == "dev_info":
         print("Commands with arguments are now supported")
+        print("micro added")
       #random command
       elif ui == "rand":
         print(random.randint(1,100))
