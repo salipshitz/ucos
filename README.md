@@ -1,4 +1,4 @@
-# UnicomOS
+# UnicomOS μ
 UnicomOS or UCOS is an open source bash like shell written in python by Geremachek2
 
 # Before You Start...
