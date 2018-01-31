@@ -1,4 +1,4 @@
-![ucos](https://user-images.githubusercontent.com/22849169/35648625-2fec7bce-068b-11e8-9807-fc75f51ddb78.png)
+![ucos](https://user-images.githubusercontent.com/22849169/35648625-2fec7bce-068b-11e8-9807-fc75f51ddb78.png | width = 100)
 # UnicomOS
 UnicomOS or UCOS is an open source bash like shell written in python by Geremachek2
 
