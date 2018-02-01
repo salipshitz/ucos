@@ -142,7 +142,8 @@ python
           os.system('cls')
           fileName = input("File Name... ")
           os.system('cls')
-          print("----------MICRO----------")
+          print("MICRO - editing " + str(fileName))
+          print("")
           f = open(fileName, 'w')
           while True:
             f.write("""
