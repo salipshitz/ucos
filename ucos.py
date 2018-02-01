@@ -142,7 +142,7 @@ python
           os.system('cls')
           fileName = input("File Name... ")
           os.system('cls')
-          print("MICRO - editing " + str(fileName))
+          print("MICRO - editing " + fileName)
           print("")
           f = open(fileName, 'w')
           while True:
@@ -180,8 +180,8 @@ python
           print("Shutdown Cancelled")
       #random program
       elif ui == "randui":
-        rui = input(">")
-        rui1 = input(">")
+        rui = input("> ")
+        rui1 = input("> ")
         print(random.randint(int(rui),int(rui1)))
       #GUI window program
       elif ui == "win":
@@ -271,6 +271,10 @@ type cls or clear to clear screen
       elif ui == "about":
         print('''
 UnicomOS or UCOS is an open source, easaly hackable OS, written in python. Feel free to modify the source code via the python app included in UCOS or by directly modifing the source code. You can add your own program written in python, java C++ or anything else! Have Fun!''')
+      elif ui + '.py' in os.listdir(os.getcwd()):
+        uipy = open(ui + '.py', 'r')
+        exec(uipy.read())
+        uipy.close()
       #echo fixes
       elif int(len(ui)) < 3:
         print("Syntax Error, '" + str(ui) + "' is not valid")
