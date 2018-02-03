@@ -142,7 +142,7 @@ python
           os.system('cls')
           fileName = input("File Name... ")
           os.system('cls')
-          print("MICRO - editing " + fileName)
+          print("--------------" + fileName + "--------------")
           print("")
           f = open(fileName, 'w')
           while True:
@@ -271,8 +271,8 @@ type cls or clear to clear screen
       elif ui == "about":
         print('''
 UnicomOS or UCOS is an open source, easaly hackable OS, written in python. Feel free to modify the source code via the python app included in UCOS or by directly modifing the source code. You can add your own program written in python, java C++ or anything else! Have Fun!''')
-      elif ui + '.py' in os.listdir(os.getcwd()):
-        uipy = open(ui + '.py', 'r')
+      elif ui + '.ucmd' in os.listdir(os.getcwd()):
+        uipy = open(ui + '.ucmd', 'r')
         exec(uipy.read())
         uipy.close()
       #echo fixes
