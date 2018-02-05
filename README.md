@@ -9,7 +9,7 @@ Put all of these system files in its own folder, called USYS or just UCOS
 ```
 Booting Into UnicomOS 12.0...
 ```
-You can execute dev commands on this screen, check the /ucos.py source code or BOOTCMD.md to find out what you can do!
+You can execute dev commands on this screen, check the [ucos.py](https://github.com/Geremachek2/ucos/blob/master/ucos.py) source code to find out!
 
 After this you will see a prompt that looks like this
 ```
@@ -41,7 +41,7 @@ global password
 password = "root"
 ```
 You can change the password, username, and prompt character by changing what their equal to
-# Tricks and easter eggs
+# Tips and tricks
 if you use the print command like so
 ```
 $ print ucos.py
@@ -63,3 +63,4 @@ $ echov 9*54
 486
 $ 
 ```
+UCOS's editor, micro, can be used without ucos! download the repo [here](https://github.com/Geremachek2/micro)
