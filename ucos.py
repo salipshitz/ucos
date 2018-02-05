@@ -139,19 +139,22 @@ python
         print(str(datetime.now().hour) + ":" + str(datetime.now().minute) + ":" + str(datetime.now().second))
       #micro program
       elif ui == "micro":
+          ln_numb = 0
           os.system('cls')
           fileName = input("File Name... ")
           os.system('cls')
           print("--------------" + fileName + "--------------")
           print("")
           f = open(fileName, 'w')
-          while True:
+          while ln_numb >= 0:
+            ln_numb += 1
             f.write("""
 """)
-            edit_ui = input("")
+            edit_ui = input(str(ln_numb) + "  ")
             if edit_ui == ":q":
               f.close()
               break
+              os.system('cls')
             f.write(edit_ui)
       #clear command_1
       elif ui == "cls":
