@@ -2,8 +2,11 @@ this file consits of edits that will be made to ```ucos.py``` or ```ucos_config.
 
 *EDITS*
 
-***2/7/18***
+*2/7/18*
+*Resolved:* N/A
 ```python
 elif ui == "micro" or 'mx':
+...
+micro[mx] (editor)
 ```
-add abrivation for micro (mx)
+*add abrivation for micro (mx) and edit list*
