@@ -274,8 +274,8 @@ type cls or clear to clear screen
       elif ui == "about":
         print('''
 UnicomOS or UCOS is an open source, easaly hackable OS, written in python. Feel free to modify the source code via the python app included in UCOS or by directly modifing the source code. You can add your own program written in python, java C++ or anything else! Have Fun!''')
-      elif ui + '.ucmd' in os.listdir(os.getcwd()):
-        uipy = open(ui + '.ucmd', 'r')
+      elif ui + '.ucos' in os.listdir(os.getcwd()):
+        uipy = open(ui + '.ucos', 'r')
         exec(uipy.read())
         uipy.close()
       #echo fixes
